@@ -16,83 +16,124 @@
       </div>
       <h1>Informativa sulla privacy</h1>
       <p class="muted">Ultimo aggiornamento: 28 ottobre 2026</p>
+      <nav class="links">
+        <a href="https://vantaggioasimmetrico-afk.github.io/">Home</a>
+        <a href="#en">English</a>
+      </nav>
 
-      <h2>Titolare</h2>
+      <h2>Ambito</h2>
       <p>
-        Vantaggio Asimmetrico Publisher è uno strumento interno del canale
-        YouTube Vantaggio Asimmetrico. Contatti:
-        <a href="mailto:[EMAIL]">[EMAIL]</a>.
+        Questa informativa riguarda l'app Vantaggio Asimmetrico Publisher,
+        usata dal titolare del canale YouTube Vantaggio Asimmetrico per
+        gestire il proprio canale tramite la YouTube Data API. Descrive quali
+        dati utente Google l'app legge, come li usa, conserva, protegge e
+        condivide. Contatti: <a href="mailto:vantaggioasimmetrico@gmail.com">vantaggioasimmetrico@gmail.com</a>.
       </p>
 
-      <h2>A cosa serve</h2>
-      <p>
-        Lo strumento è uno script che gira sul computer del titolare del
-        canale. Usa la YouTube Data API per aggiornare i video e le
-        impostazioni del canale del titolare. Non è offerto ad altri utenti.
-      </p>
-
-      <h2>Dati a cui accede</h2>
+      <h2>Dati utente Google a cui accede</h2>
       <p>
         Solo dopo l'autorizzazione esplicita del titolare, tramite l'ambito
-        OAuth <code>https://www.googleapis.com/auth/youtube</code>, lo
-        strumento accede a:
+        OAuth <code>https://www.googleapis.com/auth/youtube</code>, l'app
+        legge e modifica:
       </p>
       <ul>
         <li>
-          informazioni del canale: nome, descrizione, parole chiave, banner;
+          dati del canale: nome, identificativo, descrizione, parole chiave,
+          banner;
         </li>
         <li>
-          elenco e metadati dei video del canale: titolo, descrizione, tag,
-          categoria, lingua, stato di pubblicazione.
+          dati dei video del canale: identificativo, titolo, descrizione, tag,
+          categoria, lingua, stato di pubblicazione e data di pubblicazione
+          programmata.
         </li>
       </ul>
       <p>
-        Non accede a email, contatti, dati di pagamento, né ai dati di
-        spettatori, iscritti o altri utenti.
+        L'app non accede a email, contatti, dati di pagamento, cronologia,
+        commenti, né ai dati di spettatori, iscritti o altri utenti.
       </p>
 
       <h2>Come li usa</h2>
+      <p>Solo per le operazioni richieste dal titolare:</p>
+      <ul>
+        <li>trovare i video caricati sul canale;</li>
+        <li>
+          applicare titoli, descrizioni, tag, categoria, lingua e stato di
+          pubblicazione;
+        </li>
+        <li>aggiornare descrizione, parole chiave e banner del canale.</li>
+      </ul>
       <p>
-        Solo per leggere e aggiornare i video e il canale del titolare, su sua
-        richiesta. Nessuna profilazione, nessuna pubblicità, nessuna vendita
-        di dati.
+        I dati non sono usati per pubblicità, profilazione, analisi
+        statistiche o altri scopi.
       </p>
 
-      <h2>Dove sono conservati</h2>
-      <p>
-        Il token di accesso OAuth e i dati letti restano sul computer del
-        titolare. Lo strumento non ha server né database.
-      </p>
-
-      <h2>Terze parti</h2>
+      <h2>Come li conserva e per quanto</h2>
       <ul>
         <li>
-          <strong>Google / YouTube.</strong> Lo strumento usa i Servizi API di
+          L'app non ha server né database. I dati letti vengono usati durante
+          l'esecuzione e non sono archiviati altrove.
+        </li>
+        <li>
+          Il token di accesso OAuth è salvato in un file sul computer del
+          titolare. Resta lì finché il titolare non revoca l'accesso o
+          cancella il file.
+        </li>
+      </ul>
+
+      <h2>Come li protegge</h2>
+      <ul>
+        <li>Le comunicazioni con le API di Google avvengono solo in HTTPS.</li>
+        <li>
+          Il token e le credenziali dell'app restano sul computer del
+          titolare, protetti dal suo account di sistema, e sono esclusi da
+          qualsiasi repository di codice.
+        </li>
+        <li>L'app richiede un solo ambito OAuth, quello necessario.</li>
+      </ul>
+
+      <h2>Condivisione</h2>
+      <ul>
+        <li>
+          <strong>Google / YouTube.</strong> L'app usa i Servizi API di
           YouTube. I dati sono trattati da Google secondo le
           <a href="https://policies.google.com/privacy"
             >Norme sulla privacy di Google</a
           >.
         </li>
         <li>
-          <strong>Anthropic.</strong> Il titolare può eseguire lo strumento
-          tramite Claude Code, l'assistente AI di Anthropic. In quel caso i
-          dati letti dall'API transitano anche da Anthropic, secondo la sua
+          <strong>Anthropic.</strong> Il titolare può eseguire l'app tramite
+          Claude Code, l'assistente AI di Anthropic, che lancia lo script sul
+          suo computer. In quel caso i dati letti dall'API transitano anche da
+          Anthropic, solo per eseguire le operazioni richieste, secondo la sua
           <a href="https://www.anthropic.com/legal/privacy"
             >informativa sulla privacy</a
           >.
         </li>
       </ul>
-      <p>Nessun'altra condivisione.</p>
+      <p>
+        I dati non sono venduti, ceduti o comunicati ad altri soggetti.
+      </p>
 
       <h2>Uso limitato</h2>
       <p>
-        L'uso e il trasferimento delle informazioni ricevute dalle API di
-        Google rispettano le
+        L'uso e il trasferimento ad altre app delle informazioni ricevute
+        dalle API di Google rispettano le
         <a
           href="https://developers.google.com/terms/api-services-user-data-policy"
           >Norme sui dati utente dei servizi API di Google</a
-        >, inclusi i requisiti di Uso limitato.
+        >, inclusi i requisiti di Uso limitato. In particolare, i dati utente
+        Google:
       </p>
+      <ul>
+        <li>non sono usati per pubblicità di alcun tipo;</li>
+        <li>non sono venduti a data broker o rivenditori di informazioni;</li>
+        <li>non sono usati per valutazioni di credito o prestiti;</li>
+        <li>non sono usati per creare database;</li>
+        <li>
+          non sono usati per sviluppare, migliorare o addestrare modelli di
+          intelligenza artificiale o machine learning generalizzati.
+        </li>
+      </ul>
 
       <h2>Revoca e cancellazione</h2>
       <p>
@@ -100,8 +141,10 @@
         <a href="https://myaccount.google.com/permissions"
           >Accesso di terze parti</a
         >
-        dell'account Google. Cancellando il file del token dal computer del
-        titolare non resta alcun dato conservato dallo strumento.
+        dell'account Google. Dopo la revoca l'app non può più leggere né
+        modificare il canale. Cancellando il file del token dal computer del
+        titolare non resta alcun dato conservato dall'app. Per qualsiasi
+        richiesta: <a href="mailto:vantaggioasimmetrico@gmail.com">vantaggioasimmetrico@gmail.com</a>.
       </p>
 
       <h2>Questo sito</h2>
@@ -113,14 +156,102 @@
 
       <h2>Modifiche</h2>
       <p>
-        Eventuali modifiche vengono pubblicate su questa pagina con la nuova
-        data di aggiornamento.
+        Se cambia il modo in cui l'app usa i dati utente Google, questa pagina
+        viene aggiornata con la nuova data prima che il cambiamento sia
+        applicato.
       </p>
 
+      <section id="en" lang="en">
+        <div class="label">
+          <span class="tag">English</span>
+        </div>
+        <h2>Privacy Policy</h2>
+        <p>
+          This policy covers Vantaggio Asimmetrico Publisher, the app the
+          owner of the YouTube channel Vantaggio Asimmetrico uses to manage
+          the channel through the YouTube Data API. Contact:
+          <a href="mailto:vantaggioasimmetrico@gmail.com">vantaggioasimmetrico@gmail.com</a>.
+        </p>
+        <h2>Google user data accessed</h2>
+        <p>
+          Only after the owner's explicit consent, through the OAuth scope
+          <code>https://www.googleapis.com/auth/youtube</code>, the app reads
+          and updates: channel data (name, ID, description, keywords, banner)
+          and the channel's video data (ID, title, description, tags,
+          category, language, privacy status, scheduled publish time). It does
+          not access email, contacts, payment data, history, comments, or data
+          of viewers, subscribers or other users.
+        </p>
+        <h2>How the data is used</h2>
+        <p>
+          Only to perform the owner's requests: find uploaded videos, apply
+          titles, descriptions, tags, category, language and privacy status,
+          and update the channel description, keywords and banner. No
+          advertising, profiling or analytics.
+        </p>
+        <h2>Storage and retention</h2>
+        <p>
+          The app has no servers or databases. Data read from the API is used
+          during execution and not archived elsewhere. The OAuth token is
+          stored in a file on the owner's computer until the owner revokes
+          access or deletes the file.
+        </p>
+        <h2>Protection</h2>
+        <p>
+          All API traffic uses HTTPS. The token and app credentials stay on
+          the owner's computer, protected by the owner's system account, and
+          are excluded from any code repository. The app requests a single,
+          necessary OAuth scope.
+        </p>
+        <h2>Sharing</h2>
+        <p>
+          Google processes data under the
+          <a href="https://policies.google.com/privacy"
+            >Google Privacy Policy</a
+          >. The owner may run the app through Claude Code, Anthropic's AI
+          assistant; in that case data read from the API also passes through
+          Anthropic, only to perform the requested operations, under the
+          <a href="https://www.anthropic.com/legal/privacy"
+            >Anthropic Privacy Policy</a
+          >. Data is not sold, transferred or disclosed to anyone else.
+        </p>
+        <h2>Limited Use</h2>
+        <p>
+          Vantaggio Asimmetrico Publisher's use and transfer to any other app
+          of information received from Google APIs will adhere to the
+          <a
+            href="https://developers.google.com/terms/api-services-user-data-policy"
+            >Google API Services User Data Policy</a
+          >, including the Limited Use requirements. Google user data is not
+          used for advertising, not sold to data brokers or information
+          resellers, not used for credit or lending decisions, not used to
+          create databases, and not used to develop, improve or train
+          generalized AI or machine learning models.
+        </p>
+        <h2>Revocation and deletion</h2>
+        <p>
+          Access can be revoked at any time from the Google Account
+          <a href="https://myaccount.google.com/permissions"
+            >third-party access</a
+          >
+          page. Deleting the token file from the owner's computer leaves no
+          data stored by the app.
+        </p>
+        <h2>Changes</h2>
+        <p>
+          If the way the app uses Google user data changes, this page is
+          updated with a new date before the change takes effect.
+        </p>
+      </section>
+
       <footer>
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="termini.html">Termini</a>
+        <a href="https://vantaggioasimmetrico-afk.github.io/">Home</a>
+        <a href="https://vantaggioasimmetrico-afk.github.io/privacy.html"
+          >Privacy</a
+        >
+        <a href="https://vantaggioasimmetrico-afk.github.io/termini.html"
+          >Termini</a
+        >
       </footer>
     </main>
   </body>
